@@ -16,7 +16,7 @@ To run the code, first position your contactor (pencil in my case) centrally abo
 <br/><br/>
 P.S. 
 
-I did not write the A* algorithm, it is taken from [here](https://github.com/sanariaz154/15-puzzle-solver) with modification done to import initial and final state and export the path to final state. ChatGPT wrote [the piece](Code/A_star_solver/define_movement.py) that extracts the actual movement (up/down/left/right). I only really wrote the gcode generating bit. 
+I did not write the A* algorithm, it is taken from [here](https://github.com/sanariaz154/15-puzzle-solver) with modification done to import initial and final state and export the path to final state. ChatGPT wrote [the piece](Code/A_star_solver/define_movement.py) that extracts the actual movement (up/down/left/right). I only really wrote the gcode generating bit. It seems in some cases, the puzzle is solvable but stack will overflow before finding the solution. I might look in this when I have time. 
 
 Regarding mechatronics, the stepper motor driver has 1A current rating, which is below the motor's rating, so do remember to set the current limit. The 3D printer structural parts have questionable strength, I caused some to crack when tightening the bolts, and broken a piece when installing the fans. Super glue is strongly recommended as they can be very sketchy. 
 
