@@ -202,7 +202,7 @@ def A_star(puzz,goal,root):
     # print ("Expanded nodes:", expanded_states)
     # print ("Solution:")
     # print(path[1:])
-    with open('path.txt', 'w') as f:
+    with open('A_star_solver/path.txt', 'w') as f:
          for i in range(1,len(path)):
             f.write(path[i])
             f.write('\n')
@@ -259,7 +259,7 @@ def distance(mat):
 	
 def A_star_go():
     puzzle = []
-    with open('initial_state.txt', 'r') as my_file:
+    with open('A_star_solver/initial_state.txt', 'r') as my_file:
     # Read each line from the file
         for line in my_file:
             # Split each line into elements
@@ -273,7 +273,7 @@ def A_star_go():
     # print(puzzle)
 
     goal = []
-    with open('final_state.txt', 'r') as my_file:
+    with open('A_star_solver/final_state.txt', 'r') as my_file:
     # Read each line from the file
         for line in my_file:
             # Split each line into elements

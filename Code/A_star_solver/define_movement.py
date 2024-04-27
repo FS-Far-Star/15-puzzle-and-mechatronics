@@ -19,7 +19,7 @@ def determine_movement(current_state, next_state):
 
 def extract_movements():
     # Read states from the text file
-    with open('path.txt', 'r') as file:
+    with open('A_star_solver/path.txt', 'r') as file:
         states = [eval(line) for line in file]
 
     # Determine movements between consecutive states
@@ -31,7 +31,7 @@ def extract_movements():
         movements_list.append(movement)
 
     # Save the list of movements to 'movements.txt'
-    with open('movements.txt', 'w') as file:
+    with open('A_star_solver/movements.txt', 'w') as file:
         for movement in movements_list:
             file.write(movement + '\n')
 
